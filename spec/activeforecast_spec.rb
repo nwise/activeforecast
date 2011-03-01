@@ -26,8 +26,15 @@ describe "ActiveForecast" do
   end
 
   it "should define a method on the Forecast object for each element in the XML document" do
-    raw_data = ActiveForecast::Forecast.new("KCAK")
-    puts raw_data.inspect
-    pending "WIP"
+    begin
+      forecast = ActiveForecast::Forecast.new("KCAK")
+      parsed_response = forecast.raw_data.parsed_response
+      parsed_response['current_observation'].each do |k,v|
+        forecast.send(k.to_s)
+      end
+      true
+    rescue NoMethodError
+      false
+    end
   end
 end
