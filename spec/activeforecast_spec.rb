@@ -11,22 +11,23 @@ describe "ActiveForecast" do
     forecast.should_not be nil
   end
 
-  it "should get forecast data when passed an airport code" do
+  it "should get XML forecast data when passed a valid airport code" do
     forecast = ActiveForecast::Forecast.new("KCAK")
-    forecast.raw_data.should_not be nil
+    forecast.raw_data.content_type.should == 'text/xml'
   end
 
   it "should throw NoSuchAirportCodeError when initialized with a bad airport code" do
     begin
       forecast = ActiveForecast::Forecast.new("ABC")
       false
-    rescue Exception => e
-      puts e.inspect
+    rescue ActiveForecastErrors::NoSuchAirportCode
       true
     end
   end
 
   it "should define a method on the Forecast object for each element in the XML document" do
-    pending
+    raw_data = ActiveForecast::Forecast.new("KCAK")
+    puts raw_data.inspect
+    pending "WIP"
   end
 end
