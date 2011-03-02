@@ -15,10 +15,10 @@ Jeweler::Tasks.new do |gem|
   gem.name = "activeforecast"
   gem.homepage = "http://github.com/nwise/activeforecast"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{Ruby gem for pulling forcast information from weather.gov}
+  gem.description = %Q{Ruby gem for pulling forcast information from weather.gov}
   gem.email = "nathanwise@gmail.com"
-  gem.authors = ["Nate Wise"]
+  gem.authors = ["Nathan Wise"]
   # Include your dependencies below. Runtime dependencies are required when using your gem,
   # and development dependencies are only needed for development (ie running rake tasks, tests, etc)
   #  gem.add_runtime_dependency 'jabber4r', '> 0.1'
