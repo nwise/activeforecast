@@ -8,9 +8,9 @@ Gem::Specification.new do |s|
   s.version = "1.0.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
-  s.authors = ["Nate Wise"]
+  s.authors = ["Nathan Wise"]
   s.date = %q{2011-03-01}
-  s.description = %q{TODO: longer description of your gem}
+  s.description = %q{Ruby gem for pulling forcast information from weather.gov}
   s.email = %q{nathanwise@gmail.com}
   s.extra_rdoc_files = [
     "LICENSE.txt",
@@ -36,7 +36,7 @@ Gem::Specification.new do |s|
   s.licenses = ["MIT"]
   s.require_paths = ["lib"]
   s.rubygems_version = %q{1.3.7}
-  s.summary = %q{TODO: one-line summary of your gem}
+  s.summary = %q{Ruby gem for pulling forcast information from weather.gov}
   s.test_files = [
     "spec/activeforecast_spec.rb",
     "spec/spec_helper.rb"
