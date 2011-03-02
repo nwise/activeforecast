@@ -8,9 +8,9 @@ Gem::Specification.new do |s|
   s.version = "1.0.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
-  s.authors = ["Nathan Wise"]
+  s.authors = ["Nate Wise"]
   s.date = %q{2011-03-01}
-  s.description = %q{Ruby gem for pulling forcast information from weather.gov}
+  s.description = %q{TODO: longer description of your gem}
   s.email = %q{nathanwise@gmail.com}
   s.extra_rdoc_files = [
     "LICENSE.txt",
